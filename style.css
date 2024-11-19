@@ -1,0 +1,106 @@
+/* تعيين الخطوط والأساسيات */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* خلفية الصفحة */
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+/* إعداد النظام الشمسي */
+.solar-system {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+/* الشمس */
+.sun {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8);
+}
+
+/* الكواكب */
+.planet {
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 1s ease;
+}
+
+.mercury {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    animation: orbit 3s linear infinite;
+}
+
+.venus {
+    width: 50px;
+    height: 50px;
+    background-color: #ffb84d;
+    animation: orbit 5s linear infinite;
+}
+
+.earth {
+    width: 60px;
+    height: 60px;
+    background-color: #2196F3;
+    animation: orbit 7s linear infinite;
+}
+
+.mars {
+    width: 55px;
+    height: 55px;
+    background-color: #D32F2F;
+    animation: orbit 9s linear infinite;
+}
+
+.jupiter {
+    width: 110px;
+    height: 110px;
+    background-color: #F57C00;
+    animation: orbit 12s linear infinite;
+}
+
+.saturn {
+    width: 120px;
+    height: 120px;
+    background-color: #D32F2F;
+    animation: orbit 15s linear infinite;
+}
+
+.uranus {
+    width: 90px;
+    height: 90px;
+    background-color: #4CAF50;
+    animation: orbit 18s linear infinite;
+}
+
+.neptune {
+    width: 90px;
+    height: 90px;
+    background-color: #2196F3;
+    animation: orbit 20s linear infinite;
+}
+
+/* حركة الكواكب حول الشمس */
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(200px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>forms</title>
+   </head> 
+   <body>
+    <form action="process.php">
+        <div>
+            <label for="name">Name</label><br>
+            <input type=" text" id="name" name="name">
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" email="email" >
+        </div>
+        <div>
+            <label for="sex">Sex</label>
+            <select name="sex" id="sex">
+                <option value="male">Male </option>
+                <option value="female">female</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="age">Age</label>
+            <input type="age" id="age" age="age">
+        </div>
+        <div><br>
+            <label for="birthdate">Birthdate</label>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+        <div>
+            <label for="etudiants"><strong>Etudiants</strong></label>
+            <input type="radio" name="radio" value="simple">
+        
+            <label for="Autres"><strong>Autres</strong></label>
+            <input type="radio" name="radio" value="simple">
+        </div>
+        <div>
+            <label for="message">Message</label><br>
+            <textarea name="text" id="email" message="message" cols="30" rows="3"></textarea>
+        </div>
+        <div><br>
+            <input type="submit" value="submit">
+            <button type="reset">rest</button>
+        </div>
+    </form>
+   </body>
+</html>
